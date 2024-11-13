@@ -6,4 +6,5 @@ const GDH: any = new Date().getTime()
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', GDH)
 const companyAccount: CompanyAccount = new CompanyAccount('DIO', GDH)
 
-console.log(peopleAccount, companyAccount)
+let start:number = 1
+
