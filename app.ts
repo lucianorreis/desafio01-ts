@@ -1,9 +1,9 @@
 import { CompanyAccount } from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
+import { question } from 'readline-sync'
 
-const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
-console.log(peopleAccount)
-peopleAccount.deposit()
-const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
-companyAccount.deposit()
-console.log(companyAccount)
+const GDH: any = new Date().getTime()
+const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', GDH)
+const companyAccount: CompanyAccount = new CompanyAccount('DIO', GDH)
+
+console.log(peopleAccount, companyAccount)
